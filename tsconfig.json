@@ -1,0 +1,28 @@
+{
+  /*
+      tscconfig.json是ts编译器的配置文件，ts编译器可以根据他的信息对代码进行编译
+
+      "include":[]指定哪些ts文件需要被编译
+        /** 表示任意目录
+        /*  表示任意文件
+
+      "exclude":[]数组里面指定不想被编译的文件，将把文件排除
+  */
+  "include": [
+    "./003IDE/**/*"
+  ],
+  // "exclude": [
+  //   "./src/hello/**/*"
+  // ],
+  //"extends": "", // 继承别的json文件
+  "file": [], //要编译的文件，和include类似
+
+  //compilerOption编译器选项
+  "compilerOption": {
+    //target指定es被编译的版本
+    "target": "es6", // esnext表示最新版本，可以传一个错误的，报错会看到可选项
+
+    //模块版本
+    "module":"es6"
+  }
+}
