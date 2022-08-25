@@ -22,7 +22,43 @@
     //target指定es被编译的版本
     "target": "es6", // esnext表示最新版本，可以传一个错误的，报错会看到可选项
 
-    //模块版本
-    "module":"es6"
+    //模块版本， 版本为amd和system的时候outFile可以合并带模块的代码
+    "module":"es6",
+    //用来指定项目中要用的库
+    // "lib":["dom"] // 一般不用动，也可以输入一个错的值看能导入什么值
+
+    //！！
+    // outDir用来编译后的文件所在目录,可以创建新目录
+    // "outDir":"./Practise"
+    // outFile可以导出为一个文件，全局作用域的代码合并到一个文件
+    // "outFile":"./Practise/app.js"
+
+    //是否把JS文件也一起编译并导出了，默认值false
+    "allowJs":false,
+    //是否检查JS代码符合规范,默认值false
+    "checkJs":false,
+
+    //是否把注释也编译，默认值true
+    "removeCommoents":true,
+    //不生成编译文件，默认值false
+    "noEmit":false,
+
+    //有错时不生成编译文件，默认值为false，可以打开，有错时就不会编译
+    "noEmitOnError":false,
+
+    //严格检查开关，默认false，为true时下面所有开关都打开，开发模式下建议为true
+    "strict":true,
+
+    // 来设置编译后的文件是否使用严格模式，默认false
+    // 有引入模块时，自动为严格模式
+    "alwaysStrict":true,
+
+    // true时，不允许隐式any类型
+    "noImplicitAny":true,
+    // true时，不允许不明确类型this
+    "noImplicitThis":true,
+
+    //检查空值，默认值false
+    "strictNullChecks":true,
   }
 }

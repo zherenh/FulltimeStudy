@@ -29,3 +29,7 @@ tsc
 
 tsc -w
 监视文件夹下所有文件
+
+配置文件笔记在
+tsconfig.json
+里面
