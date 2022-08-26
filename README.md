@@ -33,3 +33,25 @@ tsc -w
 配置文件笔记在
 tsconfig.json
 里面
+
+
+webpack打包
+先
+npm init -y
+初始化
+
+会出现
+package.json
+
+下周webpack
+npm i -D webpack webpack-cli typescript ts-loader 
+
+前端浏览器打包，自动生成html文件，是一个插件
+npm i -D html-webpack-plugin clean-webpack-plugin
+清楚插件，清楚上一次打包好输出的文件clean-webpack-plugin
+
+插件，内置服务器，可以在直接运行,打包后可以用npm start直接运行，且可以实时更新
+npm i -D webpack-dev-server
+
+安装babel，可以转换新版代码到旧版以适配各版本浏览器，如es6到es3
+npm i -D @babel/core @babel/preset-env babel-loader core-js
