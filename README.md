@@ -55,3 +55,13 @@ npm i -D webpack-dev-server
 
 安装babel，可以转换新版代码到旧版以适配各版本浏览器，如es6到es3
 npm i -D @babel/core @babel/preset-env babel-loader core-js
+
+
+出现这个bug：
+访问器仅在面向 ECMAScript 5 和更高版本时可用
+error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
+->
+先改配置文件tsconfig.ts里面的target到es6
+再
+tsc xxx.ts -t es6
+这样将导出es6的js文件

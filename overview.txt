@@ -1,0 +1,14 @@
+day1
+Type, Data and config.
+Hardest Question: Substring.ts
+
+day2
+Webpack and Class including abstract
+Hardest Question: Smallest.ts
+
+day3
+Interface, Encapsulation and Genericity
+Practise questions are something about es6 version in ts and js
+
+day4
+Typescript self project 
