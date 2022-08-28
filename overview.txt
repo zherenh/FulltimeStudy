@@ -12,3 +12,5 @@ Practise questions are something about es6 version in ts and js
 
 day4
 Typescript self project 
+init and set up
+design the frame
