@@ -14,3 +14,8 @@ day4
 Typescript self project 
 init and set up
 design the frame
+
+day5
+try three interview algorithm questions.
+then use ts to write them.
+All of them are quite difficult.
