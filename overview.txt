@@ -19,3 +19,7 @@ day5
 try three interview algorithm questions.
 then use ts to write them.
 All of them are quite difficult.
+
+day6
+Review the linklist and try to set up linklist by typescript.
+Some edabit hadest level questions and linklist questions
