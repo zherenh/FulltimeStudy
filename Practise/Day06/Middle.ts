@@ -16,7 +16,7 @@ Explanation: Since the list has two middle nodes with values 3 and 4, we return 
             value: any;
             next: any;
         }
-        class Node<T> implements linklist {
+        class Node implements linklist {
             value: any;
             next: any;
             // 默认传一个元素进来
