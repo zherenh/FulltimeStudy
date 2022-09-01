@@ -20,8 +20,10 @@ kthBinaryArray(4, 10) ➞ "110"
     () => {
         function Nth(N: number, K: number): string {
             let lst: string[] = [];
+            // loop the number, and make them become binary
             for (let i = 0; i >= 0; i++) {
                 let tmp: string = i.toString(2);
+                // if the length of binary number is bigger than N, break
                 if (tmp.length > N) {
                     break
                 }
@@ -32,6 +34,8 @@ kthBinaryArray(4, 10) ➞ "110"
             /*
             ['0', '1', '10', '11', '100', '101', '110', '111', '1000', '1001', '1010', '1011', '1100', '1101', '1110', '1111']
             */
+
+            // return the element from back
             return lst[lst.length - K];
         }
         console.log(Nth(4, 10)); //'110'
