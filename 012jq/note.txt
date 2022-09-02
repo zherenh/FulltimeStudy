@@ -1,0 +1,23 @@
+资源网站
+https://blog.csdn.net/wzj_110/article/details/117387891
+
+Mac OS download by Homebrew
+`brew install jq`
+
+cd json file
+`cat xxx.json`
+
+cd json file and make it looks good 
+`cat xxx.json | jq .`
+
+去json file里面指定对象
+`cat xxx.json | jq .xxx`
+
+如果是数组，可以根据index查找
+`cat xxx.json | jq .[1]`
+可以嵌套查找
+`cat xxx.json | jq .[1][0]`
+`cat xxx.json | jq .[0,3]`
+
+把读取的内容视为数组
+cat xxx.json | jq -s
