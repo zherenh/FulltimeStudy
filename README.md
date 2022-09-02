@@ -95,3 +95,8 @@ class Dictionary {
         return values;
     }
 }
+
+
+
+npm ts-node xxx.ts
+直接运行ts文件
