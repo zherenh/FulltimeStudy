@@ -21,3 +21,19 @@ cd json file and make it looks good
 
 把读取的内容视为数组
 cat xxx.json | jq -s
+
+不格式化
+cat xxx.json | jq -c
+
+去双引号
+cat xxx.json | jq -r
+
+
+数据重组
+
+数据重'组成数组'-->"[]"
+echo '{"a":1,"b":2,"c":3,"d":4}' | jq '[.a,.b]'
+ 
+数据重'组成对象'-->"{}"
+echo '{"a":1,"b":2,"c":3,"d":4}' | jq '{"tmp":.b}'
+
