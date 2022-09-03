@@ -18,5 +18,4 @@ output: "23801163207", this id will change in any minute
 curl https://api.github.com/events | jq '.[].id' 
 
 4.
-cat test.json | jq '.[] | select (.type == "WatchEvent") | .id' 
 curl https://api.github.com/events | jq '.[] | select (.type == "WatchEvent") | .id' 
