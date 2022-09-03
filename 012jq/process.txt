@@ -1,0 +1,22 @@
+1. pipe the above and give me the first element of the array.
+2. give me the id in the first element of the array.
+3. give me the id field of every element in the array.
+4. give me the id field of every element in the array where "type" is "WatchEvent" in the array.
+
+
+1.
+curl https://api.github.com/events | jq
+
+
+2.
+curl https://api.github.com/events | jq .[0].id
+
+output: "23801163207", this id will change in any minute
+
+
+3.
+curl https://api.github.com/events | jq '.[].id' 
+
+4.
+cat test.json | jq '.[] | select (.type == "WatchEvent") | .id' 
+curl https://api.github.com/events | jq '.[] | select (.type == "WatchEvent") | .id' 

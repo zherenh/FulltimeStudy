@@ -1,5 +1,12 @@
 资源网站
 https://blog.csdn.net/wzj_110/article/details/117387891
+关于key
+https://www.jianshu.com/p/35db94f63da5 
+关于array
+https://zhuanlan.zhihu.com/p/359180772 
+大全
+https://www.cnblogs.com/FunTester/p/14713957.html
+
 
 Mac OS download by Homebrew
 `brew install jq`
@@ -37,3 +44,8 @@ echo '{"a":1,"b":2,"c":3,"d":4}' | jq '[.a,.b]'
 数据重'组成对象'-->"{}"
 echo '{"a":1,"b":2,"c":3,"d":4}' | jq '{"tmp":.b}'
 
+可以多个|进行多次过滤， ｜前表示输入数据 ｜后表示过滤完的数据
+cat test.json | jq '.[] | select (.type == "WatchEvent") | .id' 
+
+有keys和length等函数可供使用
+cat FunTester.json  | jq '. | keys | length > 1'
