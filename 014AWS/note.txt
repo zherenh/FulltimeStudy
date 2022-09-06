@@ -1,3 +1,28 @@
 介绍
 https://blog.csdn.net/weixin_46931877/article/details/124444511
+详细流程
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-prereqs.html
 
+AWS CLI
+先下载
+sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws
+sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer
+
+aws路径
+which aws
+版本
+aws --version
+
+打开aws配置文件
+aws configure
+
+地区region
+us-west-2
+悉尼
+ap-southeast2
+
+配置文件命名
+aws configure --profile xxx
+
+使用命名配置文件
+aws ec2 describe-instances --profile xxx
