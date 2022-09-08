@@ -1,0 +1,35 @@
+Physical:
+Physical controls are anything that physically limits or prevents access to IT systems. Fences, guards, dogs, and CCTV systems and the like.
+物理上限制或阻止访问 IT 系统的任何东西。栅栏、警卫、狗和闭路电视系统等。
+
+Technical:
+Technical controls are hardware or software whose purpose is to protect systems and resources. Examples of technical controls would be disk encryption, File integrity software, and authentication. Hardware technical controls differ from physical controls in that they prevent access to the contents of a system, but not the physical systems themselves.
+技术控制的示例包括磁盘加密、文件完整性软件和身份验证。硬件技术控制与物理控制的不同之处在于它们阻止对系统内容的访问，而不是对物理系统本身的访问。
+
+Administrative:
+Administrative controls are organization's policies and procedures. Their purpose is to ensure that there is proper guidance available in regard to security and that regulations are met. They include things such as hiring practices, data handling procedures, and security requirements.
+管理控制是组织的政策和程序。他们的目的是确保在安全方面有适当的指导并满足规定。它们包括诸如招聘实践、数据处理程序和安全要求等内容。
+
+
+System and application:
+-Antivirus software 防毒软件
+-Authentication and password security 身份验证和密码安全
+-Encryption 加密
+-Hashing passwords散列密码
+-Logging and auditing记录和审计
+-Multi-factor authentication多因素身份验证
+-Vulnerability scanners漏洞扫描器
+-Timed access control定时访问控制
+-Internet Security Awareness Training互联网安全意识培训
+-Sandboxing沙盒
+-Intrusion detection systems (IDS)入侵检测系统
+
+Network
+-Firewalls (hardware or software)防火墙
+-Demilitarized zones (DMZ)非军事区
+-Virtual private network (VPN)虚拟专用网络
+
+Physical
+-Biometrics生物识别
+-Data-centric security以数据为中心的安全性
+-Physical security (e.g. deadbolt locks)物理安全

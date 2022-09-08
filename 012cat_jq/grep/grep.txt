@@ -1,0 +1,13 @@
+resource
+https://www.npmjs.com/package/grep-cli
+详解
+https://blog.csdn.net/weixin_43861040/article/details/125203478
+操作相关
+https://blog.csdn.net/lovedingd/article/details/116532053
+
+下载
+npm install -g grep-cli
+
+
+
+
