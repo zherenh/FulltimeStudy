@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "age": "1"
+    },
+    {
+      "id": 2,
+      "name": "json-server2",
+      "age": "2"
+    },
+    {
+      "id": 3,
+      "name": "json-server3",
+      "age": "3"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "some comment",
+      "subject": "IT"
+    }
+  ],
+  "school": {
+    "name": "typicode"
+  }
+}
