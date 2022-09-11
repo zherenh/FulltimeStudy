@@ -1,0 +1,5 @@
+下载
+npm install axios
+
+用jsDelivr CDN地址
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
