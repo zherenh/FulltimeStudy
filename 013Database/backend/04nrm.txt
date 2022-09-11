@@ -1,0 +1,39 @@
+nrm镜像
+可以在任意目录打开管理目录
+切换包管理器
+链接已全局下载的包管理器
+nrm
+
+全局安装nrm
+npm i -g nrm
+
+展示仓库
+nrm ls
+
+带*的是当前使用源
+
+切换源 比如切换淘宝源
+nrm use taobao
+
+
+Yarn
+速度比npm快
+
+yarn init
+
+yarn add 包
+yarn add 包@1
+
+yarn upgrade 包@1
+
+yarn remove 包
+
+安装全部依赖
+yarn install
+
+
+
+
+
+
+

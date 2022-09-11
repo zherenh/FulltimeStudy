@@ -1,0 +1,47 @@
+初始化仓库
+npm init
+
+生成package
+main后面为主入口
+MIT协议
+license: (ISC) MIT
+
+全局下载别的包
+npm install 包名 -g
+
+@后面可以跟版本号，下载对应版本
+npm install 包名@1
+
+可以锁定版本，别人下这个包，锁定所有依赖版本
+package-lock.json
+
+卸载
+npm uninstall 包名
+
+
+展示当前目录安装包
+npm list 
+
+
+展示全局安装包
+npm list -g
+最好不要全局安装
+
+包信息
+npm info
+
+查看包是否过期
+npm outdated
+
+node_module文件会放在.gitignore里面
+自动忽略
+有package.json文件时
+npm install
+就会自动下载package.json里面的相关内容
+
+
+2.3.8
+带^为大版本号不变，其余最新
+^2.3.8
+带~号为大版本和中版本号不变，小版本最新
+~2.3.8
