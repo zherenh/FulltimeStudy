@@ -45,3 +45,14 @@ npm install
 ^2.3.8
 带~号为大版本和中版本号不变，小版本最新
 ~2.3.8
+
+后端更改自动重启工具
+npm i -g nodemon
+sudo npm i -g nodemon
+
+也可以作为自动重启工具
+npm i -g node-dev
+sudo npm i -g node-dev
+用这个的时候
+node xxx.js要改为运行
+node-dev xxx.js
