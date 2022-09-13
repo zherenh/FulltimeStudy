@@ -86,3 +86,27 @@ let c = url.resolve('http://example.com/one', '/two'); // 'http://example.com/tw
 
 
 
+
+//!!! 新版拼接
+let newURL = new URL('/one', 'http://example.com/');
+console.log(newURL.href);
+
+
+//!!新版format
+let formatURL = new URL('http://example.com/');
+    //第二个参数为可选项，关于选择是否忽略各种字段，进行格式化
+console.log(url.format(formatURL, {fragment:false , unicode:false, auth:false}));
+
+
+//获取文件路径
+new URL('file:///xx.txt').pathname // 错误
+
+url.fileURLToPath('file:///xx.txt'); //正确
+
+
+//还有pathToFileURL
+// 路径转换成url
+
+
+// urlToHttpOptions(mtURL)
+// 会变成http对象格式，会有字段上的变化
