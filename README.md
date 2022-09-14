@@ -98,5 +98,6 @@ class Dictionary {
 
 
 
+
 npm ts-node xxx.ts
 直接运行ts文件
