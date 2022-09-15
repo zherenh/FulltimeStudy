@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>jsonp接口html文件</p>
+
+    <script>
+        // let oscript = document.createElement("script")
+        // //oscript.src = "http://localhost:3000/api/aaa"
+        // // 可以加callback
+        // oscript.src = "http://localhost:5555/jsonp?callback=test"
+        // document.body.appendChild(oscript)
+
+        // function xb(obj){
+        //     console.log(obj);
+        // }
+        fetch("http://localhost:5555/jsonp")
+        .then(res=>res.json())
+        .then(res=>{
+            console.log(res);
+        })
+    </script>
+</body>
+</html>
