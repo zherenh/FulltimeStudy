@@ -1,0 +1,11 @@
+先
+npm inte
+再把express放进包里
+npm install express
+
+
+实时更新服务器，每当代码更新时，就重新运行服务器 
+node-dev
+
+或者就用普通的
+node
