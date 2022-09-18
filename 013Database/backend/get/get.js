@@ -2,26 +2,24 @@ const http = require('http')
 const https = require('https')
 const url = require('url')
 
-const app = http.createServer((req, res) => {
-   
+http.createServer((req, res) => {image.png
     let urlobj = url.parse(req.url,true)
     // console.log(urlobj.query.callback);
     res.writeHead(200,{
         "Content-Type":"application/json;charset=utf-8",
         // cors 跨域
-        //!!! *号换成ip就是只给该ip访问权限
+        //!!! *号换成ip就是只给该ip访问权限解决跨域问题
         "access-control-allow-origin":"*" //
     })
     switch (urlobj.pathname) {
-        case "/demo":
-            console.log("listen");
+        case "/api/aaa":
             // 去网址找数据
             httpGet(res)
             break;
         default:
             res.end("404")
     }
-}).listen(5555)
+}).listen(3000)
 
 function httpGet(response){
     let data = ""
@@ -30,10 +28,10 @@ function httpGet(response){
         //监听数据接收
         res.on("data",(chunk)=>{
             data += chunk
-        })
+        }) 
         //监听数据接收接收
         res.on("end",()=>{
-            console.log(data);
+            console.log(data); 
             response.end(data);
         })
     })
