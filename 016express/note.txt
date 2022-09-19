@@ -9,3 +9,10 @@ node-dev
 
 或者就用普通的
 node
+
+
+下载ejs
+npm i ejs
+
+下载ejs插件
+ejs support

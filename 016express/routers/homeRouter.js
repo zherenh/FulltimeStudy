@@ -7,6 +7,11 @@ router.get("/",(req,res)=>{
     res.send("home")
 })
 
+router.get("/list",(req,res)=>{
+    res.send([111,222,333])
+})
+
+
 
 //导出
 module.exports = router
