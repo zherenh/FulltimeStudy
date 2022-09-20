@@ -6,9 +6,14 @@ const homeRouter = require("./routers/homeRouter")
 const searchRouter = require("./routers/searchRouter")
 const LoginRouter = require("./routers/LoginRouter")
 
-// 配置膜拜引擎
+// 配置模版引擎
 app.set("views","./views")
 app.set("view engine","ejs")
+
+//用html写ejs
+//app.set("view engine","html")
+//app.engine("html", require("ejs").renderFile) // 支持直接渲染html文件
+
 
 //配置静态资源
 // 可以同时设置多个，public为文件夹

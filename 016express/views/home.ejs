@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ejs模版可以用来引用公共的ejs代码 -->
+    <!-- 可以有第二个参数, 比如传一个开关进行判定 -->
+    <%- include("./header.ejs", isShowHead:true) %>
+    <div>
+        home ejs file
+    </div>
+
+    <ul>
+        <!-- 用循环取出后端的无限长度数据 -->
+
+        <!-- 把所有js语法的地方包起来 -->
+        <!-- 不能加等号 -->
+        <% for(let i = 0; i<list.length;i++){%>
+            <li><%= list[i]%></li> 
+            <!-- 内部用js的地方再次包起来 -->
+
+
+            <!-- 等号不会解析脚本，减号会 -->
+            <!-- 是有标签体的代码片段时，用<%- %> -->
+            <%- message%>
+        <% }%>
+
+        <%# ejs的模版注释，#，不会被加加载进浏览器%>
+    </ul>
+</body>
+</html>

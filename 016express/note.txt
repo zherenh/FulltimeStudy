@@ -16,3 +16,20 @@ npm i ejs
 
 下载ejs插件
 ejs support
+
+
+
+express引用程序生成器
+  下载安装器
+npm install -g express-generator
+npm install express-generator
+
+
+npx express-generator
+
+
+或者细节安装
+express xxx  xxx为文件名字
+
+--vies==模版
+express xxx --view=ejs
