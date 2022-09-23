@@ -2,3 +2,7 @@
 install mongodb on website
 
 
+安装mongoose模块
+npm i mongoose
+
+需要写数据库

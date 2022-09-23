@@ -33,3 +33,5 @@ express xxx  xxx为文件名字
 
 --vies==模版
 express xxx --view=ejs
+要下载ejs
+npm i ejs
