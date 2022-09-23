@@ -6,3 +6,5 @@ install mongodb on website
 npm i mongoose
 
 需要写数据库
+先配置好db.config.js
+然后在www引入
