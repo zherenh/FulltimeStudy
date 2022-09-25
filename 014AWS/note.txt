@@ -26,3 +26,4 @@ aws configure --profile xxx
 
 使用命名配置文件
 aws ec2 describe-instances --profile xxx
+
