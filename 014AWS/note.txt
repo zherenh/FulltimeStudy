@@ -8,6 +8,10 @@ AWS CLI
 sudo ln -s /folder/installed/aws-cli/aws /usr/local/bin/aws
 sudo ln -s /folder/installed/aws-cli/aws_completer /usr/local/bin/aws_completer
 
+billing alert
+在billing dashboard，budget里面，右边最下面的开启alert打勾，里面有两个蓝色链接
+左边那个就可以去alert菜单
+
 aws路径
 which aws
 版本
