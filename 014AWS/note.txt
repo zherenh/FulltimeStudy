@@ -31,3 +31,16 @@ aws configure --profile xxx
 使用命名配置文件
 aws ec2 describe-instances --profile xxx
 
+在aws里面用cloudshell会比较好操作
+
+
+下载 aws-sam-cli 该操作需要先有brew
+brew tap aws/tap
+brew install aws-sam-cli
+
+版本更新
+brew upgrade aws-sam-cli
+
+
+
+
