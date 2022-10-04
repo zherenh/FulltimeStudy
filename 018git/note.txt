@@ -1,0 +1,14 @@
+http://www.wjhsh.net/fsg6-p-13723592.html
+
+bracnh
+在main那里下拉，创建另一个branch
+
+在branch里面
+写别的代码，比如testing，或者另一种方式，同时不会改变原来的代码
+
+然后进行request pull
+
+最后merge之后
+会有一个merge测试，看是否会有冲突，如果没有，就可以正常merge
+
+merge之后，main就会有别的branch里面的写的东西
