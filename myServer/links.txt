@@ -1,0 +1,5 @@
+index:
+http://81.68.222.89
+
+testing document:
+http://81.68.222.89:8080/swagger-ui/index.html
