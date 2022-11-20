@@ -1,0 +1,10 @@
+下载vue
+全局安装
+npm install -g @vue/cli
+
+
+vue版本查看
+vue --version
+
+版本升级
+vue upgrade --next
