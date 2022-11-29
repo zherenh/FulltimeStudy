@@ -5,16 +5,18 @@
  * Input: s = "a1b2"
  */
  var letterCasePermutation = function(s) {
-    output = [];
-    if(s.search(/[A-z]/)=== 0){
-        k = 0;
+    output = [s];
+    if(s.search(/[A-z]/)=== -1){
+        return [s];
     }
     else{
-        k = 1;
+        k = s.search(/[A-z]/)
     }
     tmp = s;
-    for(i = k; i<s.length;i+=2){
-        for(j = i; j<s.length;j+=2){
+    for(i = k; i<s.length;i++){
+        if((s[i]).search(/[A-z]/)=== -1){continue;}
+        for(j = i; j<s.length;j++){
+            if((s[j]).search(/[A-z]/)=== -1){continue;}
             if((s[j]).search(/[a-z]/) === 0){
                 s = s.slice(0, j) + (s[j]).toUpperCase() + s.slice(j+1);
             }else{
@@ -22,8 +24,13 @@
             }
             output.push(s);
         }
+        if((s[j]).search(/[a-z]/) === 0){
+            s = s.slice(0, i) + (s[i]).toUpperCase() + s.slice(i+1);
+        }else{
+            s = s.slice(0, i) + (s[i]).toLowerCase() + s.slice(i+1);
+        }
         s = tmp; 
     }
-    console.log(output);
+    return output;
 };
-letterCasePermutation("3a1b2k6L9")
+console.log(letterCasePermutation("3a1b2k6L9"))
