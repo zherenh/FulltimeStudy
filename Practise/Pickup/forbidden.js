@@ -4,7 +4,7 @@ var minimumJumps = function(forbidden, a, b, x) {
     tmp = 0;
     while(forbidden.indexOf(pos) === -1){
         if(pos === x){return count}
-        else if(pos-b > x){
+        else if(pos-b*10 > x){
             break;
         }
         else if(pos < x){
@@ -13,10 +13,11 @@ var minimumJumps = function(forbidden, a, b, x) {
             tmp += 1;
         }
         else{
-            for(i = 1; pos-b*i < x; i++){
-                if(pos-b*i === x){
+            for(i = 1; ;i++){
+                if(pos - (b*i) === x){
                     return count + i;
                 }
+                if(pos - (b*i) < x){break;}
             }
             pos += a;
             count += 1;
@@ -24,3 +25,4 @@ var minimumJumps = function(forbidden, a, b, x) {
     }
     if(pos !== x){return -1}
 };
+console.log(minimumJumps([8,3,16,6,12,20],15,13,11))
