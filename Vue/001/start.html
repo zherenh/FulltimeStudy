@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- <script type="text/javascript" src="http/vue..."></script> -->
-</head>
-<body>
-    <div>hello world</div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script>
-        const m = new Vue();
+    <!-- <script type="importmap">
+            {
+              "imports": {
+                "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+              }
+            }
+          </script> -->
+</head>
+
+<body>
+    <!-- <div id="root">
+        hello <h1>{{name}}</h1>
+    </div> -->
+
+    <div id="app">{{ message }}{{ name }}</div>
+    <div id="app1">{{name}}</div>
+
+    <script type="text/javascript">
+        const { createApp } = Vue
+        /* createApp({
+            el:'#root',// el代码element #为id选择器
+                        // 用于指定当前vue为哪个容器服务，值通常为css字符串
+            // el:document.getElementById('root')
+            data:{  //data用于储存数据，供el所指定额容器使用
+                name: '!'
+            }
+        }); */
+        createApp({
+            data() {
+                return {
+                    message: 'Hello Vue!',
+                    name: 'JBB'
+                }
+            }
+        }).mount('#app')
+        createApp({
+            data() {
+                return {
+                    name: 'OBX'
+                }
+            }
+        }).mount('#app1')
     </script>
 </body>
+
 </html>
