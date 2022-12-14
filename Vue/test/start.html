@@ -23,15 +23,21 @@
         hello <h1>{{name}}</h1>
     </div> -->
 
-    <div id="app">{{ message }}{{ name }}</div>
-    <div id="app1">{{name}}</div>
+    <div class="app">{{ message }}{{ name.toLowerCase() }}</div><!--可以直接操作 -->
+    <div class="app1">{{name}} is {{school.teacher}}
+        <a :href="url.toUpperCase()">链接</a> 
+        <!-- 用:href="url"的方式简写  引号内的东西会被提出了作为js表达式执行-->
+        <!-- v-bind:href="url"  和上面相同-->
+        <div :class="demoClass">demodemodemo</div>
+    </div>
+    <!-- {{双括号}}双括号内可以写js表达式，包括变量和函数 -->
 
     <script type="text/javascript">
         const { createApp } = Vue
         /* createApp({
             el:'#root',// el代码element #为id选择器
                         // 用于指定当前vue为哪个容器服务，值通常为css字符串
-            // el:document.getElementById('root')
+            // el:document.getElemeqntById('root')
             data:{  //data用于储存数据，供el所指定额容器使用
                 name: '!'
             }
@@ -40,17 +46,22 @@
             data() {
                 return {
                     message: 'Hello Vue!',
-                    name: 'JBB'
+                    name: 'JBB',
+                    school:{
+                        teacher:"tom"
+                    }
                 }
             }
-        }).mount('#app')
+        }).mount('.app')
         createApp({
             data() {
                 return {
-                    name: 'OBX'
+                    name: 'OBX',
+                    url:'https://www.baidu.com/',
+                    demoClass: 'demo'
                 }
             }
-        }).mount('#app1')
+        }).mount('.app1')
     </script>
 </body>
 
