@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div id="root">
+        单向数据绑定:<input type="text" v-bind:value="name">
+        <br>
+        <!-- 双向绑定用v-model -->
+        <!-- 单向绑定用v-bind -->
+        双向数据绑定:<input type="text" v-model:value="name">
+
+        <!-- v-model只能应用在输入类元素值上，才能捕获输入值，有value值，才能绑定v-bind -->
+
+        <!-- v-bind数据只能从data留向页面 -->
+
+
+        <!-- 简写：
+                :value="输入值"   这个是v-bind的简写
+                v-model="输入值"  这个是v-model的简写
+        -->
+    </div>
+</body>
+
+<script>
+    Vue.config.productionTip=false
+
+    const v = new Vue({
+        //el:'#root',
+        data:{
+            name:"JBB"
+        }
+    }) 
+    //v.$mount('#root')
+//外部标记mount的好处，可以做定时器处理
+
+    setTimeout(()=>{
+        v.$mount('#root')
+    },1000)
+    
+</script>
+</html>
