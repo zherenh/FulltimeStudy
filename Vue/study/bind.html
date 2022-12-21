@@ -25,12 +25,17 @@
                 :value="输入值"   这个是v-bind的简写
                 v-model="输入值"  这个是v-model的简写
         -->
+
+        
+
     </div>
+    <input class="fun" type="text" v-model:value="name">
 </body>
 
 <script>
     Vue.config.productionTip=false
 
+    //el的两种写法
     const v = new Vue({
         //el:'#root',
         data:{
@@ -44,5 +49,17 @@
         v.$mount('#root')
     },1000)
     
+
+    //函数式data写法
+    new Vue({
+        el:'.fun',
+
+        data:function(){
+            console.log(this)//这里的this是vue本身
+            return{
+                name:"函数"
+            }
+        }
+    })
 </script>
 </html>
