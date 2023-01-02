@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../vue.js"></script>
+</head>
+<body>
+    <div class="root">
+        测试1<input type="text" v-model:value="name">
+    </div>
+    <div class="root">
+        测试2<input type="text" v-model:value="name">
+    </div>
+</body>
+
+<!-- 
+    MVVM模型
+
+    M: 模型model：data中的数据
+    V：视图view：模块代码
+    VM：视图模型：Vue实例
+ -->
+
+<script>
+ 
+
+    
+    new Vue({
+        el:'.root',
+        data:function(){
+            console.log(this);
+            return{
+                name:'test'
+            }
+        }
+    })
+
+
+    let person = {
+        name:"Ann",
+        //age:18
+    }
+
+    Object.defineProperty(person,'age',{
+        value:18,
+        enumerable:false, //修改是否枚举,默认值false
+
+        writable:false, //控制属性是否能被修改,默认值false
+        configurable:false, //控制属性可否被删除，默认值false
+        
+        get:function(){
+            return '数字'
+        },
+        /*
+        也可以
+        get(){
+
+        }
+        */
+
+        set:function(number){
+            console.log("有人修改了值")
+            age = number
+        }
+    })
+    //通过原型链来赋值
+    //原型链负值的属性不能被枚举
+
+    console.log(Object.keys(person))
+    //枚举person下面的属性值
+</script>
+</html>

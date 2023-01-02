@@ -55,7 +55,7 @@
         el:'.fun',
 
         data:function(){
-            console.log(this)//这里的this是vue本身
+            console.log(this)//这里的this是vue本身,一定不要写箭头函数，不然this就不是vue了
             return{
                 name:"函数"
             }
